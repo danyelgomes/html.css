@@ -1,0 +1,129 @@
+@font-face {
+    font-family: face;
+    src: url();
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #84E1AD;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #2FA866, #1A5C37);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin-bottom: 20px;
+}
+
+nav {
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #3DDC84;
+}
+
+main {
+    background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    color: #1A5C37;
+    margin: 20px 0;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.dandroids, .bugdroid {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.dandroids img, .bugdroid img {
+    max-width: 100%;
+    height: auto;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin: 20px 0;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+aside {
+    background-color: #C5EBD6;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+aside h4 {
+    background-color: #2FA866;
+    color: white;
+    padding: 10px;
+    margin: -20px -20px 20px -20px;
+    border-radius: 10px 10px 0 0;
+}
+
+aside ul {
+    list-style-position: inside;
+    columns: 2;
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #1A5C37;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    aside ul {
+        columns: 1;
+    }
+    
+    main {
+        margin: 0 10px;
+    }
+}
