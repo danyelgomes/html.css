@@ -14,12 +14,12 @@
 <body>
     <h1>Testando Formulários</h1>
 
-    <form>
-        <p>Nome: 
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p><label for="nomee">Nome: </label>
             <input type="text" name="nome" id="nomee">
         </p>
-        <p>Sobrenome: 
-            <input type="text" name="sobrenome" id="sobrenomee">
+        <p><label for="sobrenomee">Sobrenome: </label>
+            <input type="text" method="post" name="sobrenome" id="sobrenomee">
         </p>
         <input type="submit" value="Enviar" id="submit">
     </form>
