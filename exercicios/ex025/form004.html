@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <style>
-        body {
+        body, h1 {
             font-family: Arial, Helvetica, sans-serif;
             background-color: rgb(44, 43, 43);
             color: white;
@@ -13,6 +13,30 @@
     </style>
 </head>
 <body>
-    <h1>Teste de Formulário</h1>
+    <h1>Teste de Formulário</h1>  
+    <!-- dados pessoais, nome email tel -->
+    <form action="cadastro.php">
+        <fieldset>
+            <legend> Dados Pessoais </legend>
+
+                <p>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" required maxlength="35" placeholder="Nome completo">
+                </p>
+                <p>
+                    <label for="imail">E-mail:</label>
+                    <input type="email" name="email" id="imail" required maxlength="35" placeholder="email@example.com">
+                </p>
+                <p>
+                    <label for="itel">Telefone:</label>
+                    <input type="tel" name="tel" id="itel" required maxlength="11" placeholder="(xx) xxxx-xxxx">
+                </p>
+        </fieldset>
+        <!-- Botôes de Enviar e Limpar -->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
