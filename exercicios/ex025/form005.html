@@ -6,8 +6,40 @@
     <title>Formulário</title>
 </head>
 <body>
-    <form action="">
-        fild
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+
+            <label for="isexo"><input type="radio" name="sexo" id="isexo" value="M">Masculino<br>
+            </label>
+
+            <label for="ifem"><input type="radio" name="sexo" id="ifem" checked value="F">Feminino
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <label for="ifut">
+                <input type="checkbox" name="fut" id="ifut" checked>Futebol<br>
+            </label>
+
+            <label for="ibas">
+                <input type="checkbox" name="bas" id="ibas">Basquete<br>
+            </label>
+
+            <label for="inat">
+                <input type="checkbox" name="nat" id="inat">Natação<br>
+            </label>
+
+            <label for="iten">
+                <input type="checkbox" name="ten" id="iten">Tênis<br>
+            </label>
+
+        </fieldset>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+
+            <input type="range" name="range" id="irange" value="100" min="0" step="4">
     </form>
 </body>
 </html>
