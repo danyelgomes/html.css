@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgba(204, 0, 255, 0.205);
+            color: rgb(255, 0, 0);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <label for="iest">Estado: 
+            <select name="est" id="iest">
+                <option value=""> --Escolha-- </option>
+                <optgroup label="Região ...">
+                    <option  value="RJ">Rio de Janeiro</option>
+                    <option  value="Maranhão">Maranhão</option>
+                    <option  value="PE">Pernambuco</option>
+                </optgroup>
+            </select>
+        </label>
+<br>
+<br>
+        <label for="iprof">Profissão: 
+            <select name="prof" id="iprof">
+                <optgroup label="PROFISSÕES">
+                    <option value="Professor">Professor</option>
+                    <option value="Cozinheira">Cozinheira</option>
+                    <option value="Pintor">Pintor</option>
+                    <option value="Médico">Médico</option>
+                    <option value="Engenheiro">Engenheiro</option>
+                </optgroup>
+            </select>
+        </label>
+<br>
+<br>
+        <label for="itext">Mensagem: <br>
+            <textarea name="text" id="itext"></textarea>
+        </label>
+
+<br>
+<br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
