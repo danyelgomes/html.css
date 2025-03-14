@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header id="cabecalho">
         <h1>Meu Site</h1>
         <i id="burguer" class='bx bx-menu' onclick="clickMenu()"></i>
@@ -35,6 +36,16 @@
     </main>
     
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } 
+            else {
+                itens.style.display = 'none'
+            }
+        }
+
+
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
