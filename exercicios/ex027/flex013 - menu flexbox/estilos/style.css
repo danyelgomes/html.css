@@ -7,46 +7,38 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 header {
     background-color: grey;
-    height: 120px;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 header > h1 {
     color: white;
-    width: 150px;
     text-shadow: 2px 2px 1px black;
     font-size: 2em;
-    padding: 10px;
     padding-bottom: 0px;
-}
-header > menu {
-    display: inline-block;
-    padding-left: 11px;
-}
-header ul {
-    height: 56px;
-    display: flex;
+    flex: 0 0 200px;
+    border: 1px dotted black;
 }
 
-header li {
-    list-style-type: none;
-    color: white;
-    margin: 5px;
-    text-align: center;
-    border-radius: 10px;
-    background-color: rgb(255, 0, 0);
+header nav {
     display: flex;
-    height: 0px;
-
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    border: 1px dotted black;
 }
+
 header a {
     text-decoration: none;
     color: white;
     background-color: rgb(0, 0, 0);
-    padding: 15px 10px 15px 10px;
-    margin: auto;
+    padding: 10px;
+    margin: 5px;
     border-radius: 5px;
+    
 }
 header a:hover {
     background-color: rgb(255, 255, 255);
@@ -58,7 +50,7 @@ body {
 }
 main article {
     background-color: white;
-    margin: 10px;
     padding: 10px;
+    margin: 10px;
     border-radius: 10px;
 }
