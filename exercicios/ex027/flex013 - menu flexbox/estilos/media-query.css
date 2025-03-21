@@ -1,17 +1,14 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 564px) {
     header {
         flex-flow: column wrap;
         justify-content: center;
     }
     header h1 {
-        align-self: flex-start;
+        flex-basis: 50px;
     }
-    header nav{
+    header nav {
         display: flex;
         flex-flow: column wrap;
+        width: 90vw;
     }
-}
-h1 {
-}
