@@ -40,14 +40,17 @@ header a {
     border-radius: 5px;
     
 }
+
 header a:hover {
     background-color: rgb(255, 255, 255);
     color: black;
 }
+
 body {
     background-color: rgb(212, 212, 212);
     height: 100vh;
 }
+
 main article {
     background-color: white;
     padding: 10px;
